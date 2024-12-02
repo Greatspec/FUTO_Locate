@@ -197,7 +197,7 @@ Conclusion
 
 By following these simple steps, you can easily find the latitude and longitude of any place on Google Maps using your computer or mobile device.
 
-
+OKAFOR CHIBUEZE VICTORY (MOBILE APP DOCUMENTATION SO FAR)
 Here's a detailed documentation for everything we've discussed and implemented so far. This covers:
 
 Navigation Types Used: Stack, Drawer, and Bottom Tabs.
@@ -234,22 +234,7 @@ Used for sequential navigation, starting with Signup and Login.
 Code in App.js:
 
 javascript
-Copy code
-const Stack = createNativeStackNavigator();
 
-function StackNavigator() {
-  return (
-    <Stack.Navigator initialRouteName="Signup">
-      <Stack.Screen name="Signup" component={SignupScreen} />
-      <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen 
-        name="Main" 
-        component={DrawerNavigator} 
-        options={{ headerShown: false }} 
-      />
-    </Stack.Navigator>
-  );
-}
 b. Drawer Navigation
 Provides a sidebar menu for accessing sections like Home & Dashboard (via tabs) and Settings.
 
@@ -259,14 +244,6 @@ javascript
 Copy code
 const Drawer = createDrawerNavigator();
 
-function DrawerNavigator() {
-  return (
-    <Drawer.Navigator>
-      <Drawer.Screen name="Tabs" component={TabNavigator} options={{ title: 'Home & Dashboard' }} />
-      <Drawer.Screen name="Settings" component={SettingsScreen} />
-    </Drawer.Navigator>
-  );
-}
 If using Expo, ensure expo install is used for dependencies.
 
 Project Directory Structure
@@ -287,40 +264,13 @@ Used for sequential navigation, starting with Signup and Login.
 
 Code in App.js:
 
-javascript
-Copy code
-const Stack = createNativeStackNavigator();
 
-function StackNavigator() {
-  return (
-    <Stack.Navigator initialRouteName="Signup">
-      <Stack.Screen name="Signup" component={SignupScreen} />
-      <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen 
-        name="Main" 
-        component={DrawerNavigator} 
-        options={{ headerShown: false }} 
-      />
-    </Stack.Navigator>
-  );
-}
 b. Drawer Navigation
 Provides a sidebar menu for accessing sections like Home & Dashboard (via tabs) and Settings.
 
 Code in App.js:
-
-javascript
-Copy code
-const Drawer = createDrawerNavigator();
-
-function DrawerNavigator() {
-  return (
-    <Drawer.Navigator>
-      <Drawer.Screen name="Tabs" component={TabNavigator} options={{ title: 'Home & Dashboard' }} />
-      <Drawer.Screen name="Settings" component={SettingsScreen} />
-    </Drawer.Navigator>
-  );
-}
+SIGN UP AND LOGIN PAGES.
+This will automatically login into the app using API from a backend server.
 
 
 
